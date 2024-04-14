@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    /* color: var(--color-text); */
 }
 
 .proyectos-title h1{
@@ -29,33 +28,20 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* .proyectos-title p{
-    display: inline;
-    background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} */
-
 .proyectos-description {
     font-size: 17px;
     font-weight: 500;
 }
 
 .proyectos {
-    /* outline: 3px solid red; */
     padding: 1rem 0;
 }
 
-.slick-slide {
+/* .slick-slide {
 }
 
 .proyectos-card {
-    /* align-items: center; */
-    /* background-color: var(--color-primario); */
-    /* height: 300px; */
-    /* position: relative; */
-}
+} */
 
 .proyectos-card h2{
     color: var(--color-text);
@@ -63,10 +49,6 @@
     text-align: center;
     margin: 1rem 0;
 }
-
-/* .proyecto-1 {
-    flex-direction: row-reverse;
-} */
 
 .proyectos-img {
     cursor: pointer;
@@ -76,15 +58,12 @@
 }
 
 .btns-proyectos {
-    /* position: absolute;
-    bottom: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     gap: 1rem;
     margin-top: 1rem;
-    /* outline: 3px solid red; */
 }
 
 .btns-proyectos button{
@@ -96,29 +75,7 @@
     background: linear-gradient(to right, #0197d9, #2485f4);
 }
 
-/* .description {
-    width: 35%;
-} */
-
-/* .description h2{
-    color: var(--color-text);
-    margin: 0;
-} */
-
-/* .proyectos-list {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-} */
-
-/* .proyectos-list p{
-    margin: 5px 0;
-} */
-
-/* .proyectos-icon {
-    font-size: 1.2rem;
-    color: #4CAF50;
-} */
+ /* Modal CSS */
 
 .modal-overlay {
     position: fixed;
@@ -158,8 +115,30 @@
     object-fit: contain;
   }
 
+  .slick-prev, .slick-next {
+    font-size: 2rem;
+  }
+
   @media (max-width: 768px) {
-   
+    .proyectos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    /* .proyecto-1 {
+    }
+
+    .proyectos-card {
+    } */
+
+    .proyectos-img {
+        width: 220px;
+        height: 130px;
+    }
+
   }
   
   @media (max-width: 480px) {
@@ -167,8 +146,13 @@
         width: 90%;
     }
 
-    .proyectos-card {
-        /* width: 80%; */
+    .proyectos-img {
+        width: 180px;
+        height: 100px;
     }
-    
+
+    .btns-proyectos {
+        display: none;
+    }
+
   }

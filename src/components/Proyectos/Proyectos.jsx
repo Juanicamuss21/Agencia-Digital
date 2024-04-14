@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Modal from 'react-modal'
 import './Proyectos.css'
 import MockupClinica from '../../assets/Mockup-Clinica.webp'
@@ -73,21 +73,8 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 1
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
     }
+
   ]
 }
 
@@ -96,6 +83,19 @@ Modal.setAppElement('#root')
 const Proyectos = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState('')
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   const openModal = (image) => {
     setSelectedImage(image)
@@ -117,43 +117,36 @@ const Proyectos = () => {
         </p>
       </div>
 
-      <Slider {...settings} className='proyectos'>
-        {PROYECTOS.map((proyecto, index) => {
-          return (
-            <article
-              className={`proyectos-card proyecto-${index}`}
-              key={index}
-            >
-
+      {windowWidth < 768
+        ? (
+        <div className='proyectos'>
+          {PROYECTOS.map((proyecto, index) => (
+            <article className={`proyectos-card proyecto-${index}`} key={index}>
               <h2>{proyecto.title}</h2>
-
-              <img
-                className='proyectos-img'
-                src={proyecto.img}
-                alt='img'
-              />
-
+              <img className='proyectos-img' src={proyecto.img} alt='img' />
               <div className='btns-proyectos'>
-                <button onClick={() => openModal(proyecto.fullImage)}>Ver más</button>
+                <button onClick={() => openModal(proyecto.fullImage)}>Ver más</button>
                 <button>Descripción</button>
               </div>
-              {/* <div className='description'>
-                <h2>{proyecto.title}</h2>
-                <p>{proyecto.description}</p>
-                {proyecto.lista.map((item, index) => {
-                  return (
-                    <div className='proyectos-list' key={index}>
-                      <FaCheckCircle className='proyectos-icon' />
-                      <p>{item}</p>
-                    </div>
-                  )
-                })}
-              </div> */}
             </article>
+          ))}
+        </div>
           )
-        })}
+        : (
+          <Slider {...settings} className='proyectos'>
+          {PROYECTOS.map((proyecto, index) => (
+            <article className={`proyectos-card proyecto-${index}`} key={index}>
+              <h2>{proyecto.title}</h2>
+              <img className='proyectos-img' src={proyecto.img} alt='img' />
+              <div className='btns-proyectos'>
+                <button onClick={() => openModal(proyecto.fullImage)}>Ver más</button>
+                <button>Descripción</button>
+              </div>
+            </article>
+          ))}
+        </Slider>
+          )}
 
-      </Slider>
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
