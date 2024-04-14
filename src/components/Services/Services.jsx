@@ -29,7 +29,6 @@ const Services = () => {
     <section id="servicios" className="services-section">
       <h1 className='services-title'>Nuestros Servicios</h1>
 
-      <div className='services'>
         <div className="services-cards">
           {servicesData.map((service, index) => (
             <article key={index} className={`article-card ${service.className}`}>
@@ -42,7 +41,6 @@ const Services = () => {
             </article>
           ))}
         </div>
-      </div>
 
     </section>
   )

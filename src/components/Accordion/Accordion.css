@@ -68,4 +68,36 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
 }
+
+
+@media (max-width: 768px) {
+  .accordion-container {
+    width: 80%;
+  }
   
+}
+
+@media (max-width: 480px) {
+
+  .accordion-container {
+    width: 90%;
+    /* outline: 3px solid red; */
+  }
+
+  .accordion-header h3 {
+    font-size: 1rem;
+  }
+  .accordion-body {
+    /* outline: 3px solid red; */
+    font-size: 14px;
+  }
+
+  .plus-icon{
+    font-size: 2rem;
+  }
+  
+  .minus-icon {
+    font-size: 2rem;
+  }
+  
+}
