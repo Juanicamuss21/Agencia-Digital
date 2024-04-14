@@ -1,52 +1,71 @@
 .home-section {
     height: 100vh;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     background-color: var(--color-primario);
     color: #fff;
     overflow: hidden;
+    /* position: relative; */
 }
 
 .img-section {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
     height: 100vh;
 }
 
 .section-imagen {
     /* outline: 3px solid red; */
     position: relative;
+    /* display: flex; */
 }
 
-.phone-1 {
+.phone-1     {
     position: absolute;
-    height: 300px;
-    /* bottom: 60px; */
-    top: 220px;
-    left: 80px;
+    /* top: 30%; */
+    left: 50%;
+    transform: translateX(-50%);
+    /* right: 0; */
 }
 
 .phone-2 {
     position: absolute;
-    top: 0;
-    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
 }
 
 .phone-3 {
     position: absolute;
-    top: 100px;
-    right: -160px;
+    top: 40%;
+    transform: translateY(-50%);
+    right: 10%;
+    /* outline: 3px solid red; */
+    z-index: 1;
 }
 
 .phone-4 {
     position: absolute;
-    bottom: -150px;
-    right: 40px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: translate(-50%, -50%); */
+    /* outline: 3px solid red; */
+    z-index: 1;
+
 }
 
 .phone-5 {
     position: absolute;
-    bottom: -230px;
-    right: -165px;
+    bottom: -15%;
+    right: 11%;
+    /* outline: 3px solid red; */
+    z-index: 1;
+
 }
 
 
@@ -106,4 +125,27 @@
 }
 
 @media (max-width: 768px) {
+    .home-section {
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 4rem 0;
+    }
+
+    .col-1 {
+        /* outline: 3px solid red; */
+        padding-left: 0;
+    }
+
+    /* .img-section {
+        display: none;
+    } */
+
+    .section-imagen {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    
 }

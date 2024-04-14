@@ -1,5 +1,5 @@
 import './App.css'
-// import Home from './components/Home/Home'
+import Home from './components/Home/Home'
 // import About from './components/About/About'
 import Navigation from './components/Navigation/Navigation'
 import WhyUs from './components/Why Us/WhyUs'
@@ -13,7 +13,7 @@ function App () {
   return (
     <>
       <Navigation />
-      {/* <Home /> */}
+      <Home />
       <WhyUs />
       <Services />
       <Proyectos />
