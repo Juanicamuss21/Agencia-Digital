@@ -1,0 +1,71 @@
+/* Acordeon.css */
+.faq-section {
+  background-color: var(--color-primario);
+  padding: 4rem 0 6rem;
+  /* height: 80vh; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.faq-title {
+  font-size: 2.4rem;
+  background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 0;
+}
+
+.accordion-container {
+  /* width: 600px; */
+  width: 60%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+  /* border-radius: 5px; */
+  margin-bottom: 10;
+  
+  /* padding: 10px; */
+  /* outline: 3px solid red; */
+
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #f2f2f2; */
+  background-color: transparent;
+  cursor: pointer;
+  padding: .40rem 1.2rem;
+}
+
+.accordion-header h3{
+  font-weight: 500;
+}
+
+.accordion-body {
+  padding: 10px;
+  background-color: #fff;
+  background-color: transparent;
+}
+
+.plus-icon{
+  color: #3F2C9B;
+  font-size: 2.2rem;
+}
+
+.minus-icon {
+  color: #3F2C9B;
+  font-size: 2.2rem;
+  /* background: linear-gradient(to bottom, #3F2C9B, #5A47F1); */
+  /* background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+  

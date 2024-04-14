@@ -1,0 +1,45 @@
+.about-section {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    /* outline: 3px solid red; */
+    place-content: center;
+    /* gap: 2rem; */
+}
+
+.about-col-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: 3px solid rgb(191, 179, 179); */
+}
+
+.section-col-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* outline: 3px solid red; */
+}
+
+.img-about {
+    width: 400px;
+    border-radius: 15px;
+}
+
+.about-text {
+    /* width: 80%; */
+    padding: 2rem;
+    color: var(--color-text);
+    /* outline: 3px solid red; */
+    font-family: var(--fuente-principal);
+}
+
+.about-text h1{
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+.about-text p{
+    font-size: 17px;
+    /* font-weight: 500; */
+}
