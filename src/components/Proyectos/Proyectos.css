@@ -119,7 +119,18 @@
     font-size: 2rem;
   }
 
+  @media (max-width: 1024px) {
+    .proyectos-img {
+        width: 250px;
+        height: 150px;
+    }
+  } 
+
   @media (max-width: 768px) {
+
+    .proyectos-section {
+        padding: 2rem 0;
+    }
 
     .proyectos-img {
         width: 220px;
@@ -131,16 +142,27 @@
         padding: .5rem 1rem;
     }
 
+    .proyectos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        place-items: center;
+    }
+
   }
   
   @media (max-width: 480px) {
-    /* .btns-proyectos button{
-        
-    } */
+
+    .btns-proyectos button{
+        display: none;
+    }
 
     .proyectos-img {
         width: 200px;
         height: 110px;
-        /* outline: 3px solid red; */
     }
+
+    .proyectos-card h2 {
+        font-size: 1.2rem;
+    }
+    
   }
