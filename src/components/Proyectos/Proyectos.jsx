@@ -73,6 +73,13 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 1
       }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+      }
     }
 
   ]
@@ -83,19 +90,6 @@ Modal.setAppElement('#root')
 const Proyectos = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState('')
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
 
   const openModal = (image) => {
     setSelectedImage(image)
@@ -117,23 +111,7 @@ const Proyectos = () => {
         </p>
       </div>
 
-      {windowWidth < 768
-        ? (
-        <div className='proyectos'>
-          {PROYECTOS.map((proyecto, index) => (
-            <article className={`proyectos-card proyecto-${index}`} key={index}>
-              <h2>{proyecto.title}</h2>
-              <img className='proyectos-img' src={proyecto.img} alt='img' />
-              <div className='btns-proyectos'>
-                <button onClick={() => openModal(proyecto.fullImage)}>Ver más</button>
-                <button>Descripción</button>
-              </div>
-            </article>
-          ))}
-        </div>
-          )
-        : (
-          <Slider {...settings} className='proyectos'>
+        <Slider {...settings} className='proyectos'>
           {PROYECTOS.map((proyecto, index) => (
             <article className={`proyectos-card proyecto-${index}`} key={index}>
               <h2>{proyecto.title}</h2>
@@ -145,7 +123,6 @@ const Proyectos = () => {
             </article>
           ))}
         </Slider>
-          )}
 
       <Modal
         isOpen={isModalOpen}

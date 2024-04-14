@@ -120,39 +120,27 @@
   }
 
   @media (max-width: 768px) {
-    .proyectos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    /* .proyecto-1 {
-    }
-
-    .proyectos-card {
-    } */
 
     .proyectos-img {
         width: 220px;
         height: 130px;
     }
 
+    .btns-proyectos button{
+        font-size: 12px;
+        padding: .5rem 1rem;
+    }
+
   }
   
   @media (max-width: 480px) {
-    .proyectos-text {
-        width: 90%;
-    }
+    /* .btns-proyectos button{
+        
+    } */
 
     .proyectos-img {
-        width: 180px;
-        height: 100px;
+        width: 200px;
+        height: 110px;
+        /* outline: 3px solid red; */
     }
-
-    .btns-proyectos {
-        display: none;
-    }
-
   }
