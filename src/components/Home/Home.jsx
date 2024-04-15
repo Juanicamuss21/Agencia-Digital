@@ -7,6 +7,8 @@ import Phone3 from '../../assets/Phone3.png'
 import Phone4 from '../../assets/Phone4.png'
 import Phone5 from '../../assets/Phone5.png'
 
+// const Navegar
+
 const Home = () => {
   return (
         <section id='inicio' className='home-section'>
@@ -18,12 +20,12 @@ const Home = () => {
                         Desarrollamos <br className='br-home'/> tu <p>sitio web!</p>
                     </h1>
                     <p className='title-description'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, placeat ipsam corrupti earum hic reprehenderit quia pariatur nobis omnis sint ad perspiciatis sunt animi dolorum velit nam explicabo sit id.
+                        ¡Impulsa tu presencia en línea con nuestra agencia de desarrollo web!
                     </p>
 
-                    <button className='btn-home'>
+                    <a href="#contacto" className='btn-home'>
                         Contactanos
-                    </button>
+                    </a>
                 </div>
             </div>
 

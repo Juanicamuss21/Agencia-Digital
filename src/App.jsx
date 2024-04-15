@@ -6,8 +6,8 @@ import Navigation from './components/Navigation/Navigation'
 import Services from './components/Services/Services'
 import Proyectos from './components/Proyectos/Proyectos'
 import Accordion from './components/Accordion/Accordion'
+import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
-// import Contact from './components/Contacto/Contact'
 
 function App () {
   return (
@@ -19,8 +19,8 @@ function App () {
       <Services />
       <Proyectos />
       <Accordion />
+      <Contact />
       <Footer />
-      {/* <Contact /> */}
     </>
   )
 }

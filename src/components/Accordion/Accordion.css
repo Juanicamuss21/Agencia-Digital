@@ -1,7 +1,7 @@
 /* Acordeon.css */
 .faq-section {
   background-color: var(--color-primario);
-  padding: 4rem 0 6rem;
+  padding: 4rem 1rem;
   /* height: 80vh; */
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@
   font-size: 2.5rem;
   color: var(--color-secundario);
   font-weight: 500;
+  text-transform: uppercase;
   /* background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
   background-clip: text;
   -webkit-background-clip: text;
@@ -44,7 +45,7 @@
   /* background-color: #f2f2f2; */
   background-color: transparent;
   cursor: pointer;
-  padding: .40rem 1.2rem;
+  padding: .40rem 0;
   /* outline: 3px solid red; */
 }
 
@@ -82,18 +83,18 @@
 
 @media (max-width: 480px) {
 
+  /* .faq-section {
+    padding: 2rem .50rem;
+  } */
+
+
   .accordion-container {
     width: 90%;
     /* outline: 3px solid red; */
   }
 
-  .faq-title {
-    font-size: 2.2rem;
-  }
-
-  .accordion-header  {
-    padding-left: 0;
-  }
+  /* .faq-title {
+  } */
 
   .accordion-header h3 {
     font-size: 1rem;

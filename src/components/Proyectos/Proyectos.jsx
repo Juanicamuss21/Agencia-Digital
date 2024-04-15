@@ -112,7 +112,7 @@ const Proyectos = () => {
     <section id='proyectos' className='proyectos-section'>
       <div className='proyectos-text'>
         <div className='proyectos-title'>
-          <h1>Nuestros últimos proyectos</h1>
+          <h1>Proyectos</h1>
         </div>
         <p className='proyectos-description'>
           Te invitamos a conocer algunos de los proyectos más destacados en los que hemos participado con nuestros clientes. Explora nuestra cartera y descubre lo que podemos lograr juntos.

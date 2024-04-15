@@ -6,18 +6,16 @@ import imgAbout from '../../assets/Imagen (1).png'
 
 const About = () => {
   return (
-    <section className='about-section'>
+    <section id='sobre-nosotros' className='about-section'>
         <div className='about-col-1'>
             <div className='about-text'>
               <h1>Sobre Nosotros</h1>
 
               <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque suscipit ea voluptatibus magni quas amet repellendus ducimus labore explicabo sint, culpa ipsam, iste neque, quaerat quis illo cum debitis corrupti!
-                  Adipisci velit quod excepturi minima aliquid, est ratione dolores. eligendi repudiandae laboriosam, itaque maiores iusto. Delectus pariatur odit labore et laborum accusantium eius quam perspiciatis omnis. A eius tempora corporis?
+                Somos una agencia dedicada a crear experiencias digitales impactantes que ayudan a nuestros clientes a destacarse en el mundo digital. Ya sea que necesites un sitio web atractivo, una tienda en línea funcional o una plataforma web personalizada, estamos aquí para hacer que tu visión cobre vida.
               </p>
               <p>
-                  Cum adipisci optio magni veritatis pariatur debitis illum in? Quidem maxime perspiciatis quo adipisci vero accusantium iure consequatur, laborum eum doloremque nesciunt ut rerum corrupti rem quis cumque? Illo, quasi!
-
+                Cum adipisci optio magni veritatis pariatur debitis illum in? Quidem maxime perspiciatis quo adipisci vero accusantium iure consequatur, laborum eum doloremque nesciunt ut rerum corrupti rem quis cumque? Illo, quasi!
               </p>
             </div>
         </div>

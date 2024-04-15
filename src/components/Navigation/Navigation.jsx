@@ -22,11 +22,11 @@ const Navigation = () => {
       </div>
       <nav className={`nav-section ${menuOpen ? 'open' : ''}`}>
         <a href="#inicio" onClick={toggleMenu}>Inicio</a>
-        <a href="#sobre-tu-negocio" onClick={toggleMenu}>Sobre tu negocio</a>
+        <a href="#sobre-nosotros" onClick={toggleMenu}>Sobre Nosotros</a>
         <a href="#servicios" onClick={toggleMenu}>Servicios</a>
         <a href="#proyectos" onClick={toggleMenu}>Proyectos</a>
         <a href="#preguntas-frecuentes" onClick={toggleMenu}>F&Q</a>
-        <a href="#footer" onClick={toggleMenu}>Contacto</a>
+        <a href="#contacto" onClick={toggleMenu}>Contacto</a>
       </nav>
     </header>
   )

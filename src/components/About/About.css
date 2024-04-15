@@ -31,6 +31,7 @@
     margin: 0;
     font-size: 2.5rem;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .about-text p{
@@ -58,7 +59,6 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .img-about {
-        /* width: 300px; */
     }
   }
 
@@ -72,11 +72,8 @@
     }
 
     .about-text {
-        /* text-align: center; */
     }
 
     .about-text h1{
-        /* text-align: center; */
-        /* font-weight: 600; */
     }
   }

@@ -1,56 +1,30 @@
-import { useRef } from 'react'
 import './Contact.css'
-// import { SiGmail } from 'react-icons/si'
-// import { RiMessengerLine } from 'react-icons/ri'
-// import { BsWhatsapp } from 'react-icons/bs'
-import emailjs from 'emailjs-com'
-import { toast, Toaster } from 'react-hot-toast'
+import iconoWpp from '../../assets/Icono-wpp.webp'
+import iconoMail from '../../assets/Icono-gmail.webp'
 
 const Contact = () => {
-  const form = useRef()
-
-  const sendEmail = (e) => {
-    e.preventDefault()
-
-    emailjs.sendForm('service_vumsxww', 'template_o6zq5pf', form.current, '4U9cfwaK154485vNs')
-      .then((result) => {
-        toast.success('Mensaje enviado')
-      }, (error) => {
-        toast.error(error.text)
-      })
-
-    e.target.reset()
-  }
-
   return (
-    <section id='contact'>
-      <h1>Contacto</h1>
-
-      <div>
-        <form ref={form} onSubmit={sendEmail}>
-          <label htmlFor='name'>Nombre</label>
-          <input type='text' name='name' required />
-          <label htmlFor='email'>Email</label>
-          <input type='email' name='email' required />
-          <label htmlFor='message'>Mensaje</label>
-          <textarea name='message' required />
-          <input type='submit' value='Enviar' />
-        </form>
-
+    <section id="contacto" className="section-contact">
+      <div className='contact-container'>
+        <div className='contact-text'>
+          <h1 className='contact-title'>Contacto</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quisquam adipisci dicta veritatis.
+          </p>
+          <div className='icons'>
+            <img src={iconoWpp} alt="wpp" />
+            <img src={iconoMail} alt="mail" />
+          </div>
+        </div>
       </div>
-      <Toaster
-                position='bottom-right'
-                reverseOrder={true}
-                toastOptions={{
-                  className: '',
-                  duration: 3000,
-                  style: {
-                    background: '#363636',
-                    color: 'white',
-                    fontSize: '15px'
-                  }
-                }}
-              />
+
+      <form className='contact-form' action="">
+        <input type="text" placeholder="Nombre" />
+        <input type="text" placeholder="Apellido" />
+        <input type="email" placeholder="Email" />
+        <textarea name="" id="" rows="10" placeholder='Mensaje...'></textarea>
+        <button type="submit" className='btn-form'>Enviar</button>
+      </form>
     </section>
   )
 }
