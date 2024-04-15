@@ -4,12 +4,15 @@
     grid-template-columns: repeat(2, 40%);
     /* place-items: center; */
     place-content: center;
+    outline: 3px solid red;
+
 }
 
 .why-us-col-1{
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: 3px solid red;
 }
 
 .why-us-title {
@@ -61,8 +64,9 @@
 
 @media (max-width: 768px) {
     .why-us-section {
-        height: auto;
+        height: 70vh;
         grid-template-columns: repeat(1, 1fr);
+        place-content: initial;
         gap: 2rem;
         padding: 2rem;
     }
@@ -73,14 +77,14 @@
 
     .why-us-title {
         color: var(--color-text);
-        /* width: 300px; */
+        width: 100%;
         /* outline: 3px solid red; */
         text-align: center;
         /* padding: 2rem; */
     }
     
     .why-us-title h1{
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
     }
 
     .why-us-text {

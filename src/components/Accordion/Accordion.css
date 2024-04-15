@@ -9,11 +9,13 @@
 }
 
 .faq-title {
-  font-size: 2.4rem;
-  background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
+  font-size: 2.5rem;
+  color: var(--color-secundario);
+  font-weight: 500;
+  /* background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   text-align: center;
   margin: 0;
 }
@@ -43,6 +45,7 @@
   background-color: transparent;
   cursor: pointer;
   padding: .40rem 1.2rem;
+  /* outline: 3px solid red; */
 }
 
 .accordion-header h3{
@@ -84,11 +87,19 @@
     /* outline: 3px solid red; */
   }
 
+  .faq-title {
+    font-size: 2.2rem;
+  }
+
+  .accordion-header  {
+    padding-left: 0;
+  }
+
   .accordion-header h3 {
     font-size: 1rem;
   }
+
   .accordion-body {
-    /* outline: 3px solid red; */
     font-size: 14px;
   }
 

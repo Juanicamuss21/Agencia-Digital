@@ -10,11 +10,12 @@ import Phone5 from '../../assets/Phone5.png'
 const Home = () => {
   return (
         <section id='inicio' className='home-section'>
+            <div className='capa-dark'></div>
             <div className='col-1'>
 
                 <div className='section-text'>
                     <h1 className='title-home'>
-                        Desarrollamos <br/> tu <p>sitio web!</p>
+                        Desarrollamos <br className='br-home'/> tu <p>sitio web!</p>
                     </h1>
                     <p className='title-description'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, placeat ipsam corrupti earum hic reprehenderit quia pariatur nobis omnis sint ad perspiciatis sunt animi dolorum velit nam explicabo sit id.

@@ -1,71 +1,57 @@
 .home-section {
     height: 100vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--color-primario);
     color: #fff;
     overflow: hidden;
-    /* position: relative; */
+    position: relative;
 }
 
 .img-section {
-    /* position: absolute;
-    top: 0;
-    right: 0; */
     height: 100vh;
 }
 
-.section-imagen {
-    /* outline: 3px solid red; */
-    position: relative;
-    /* display: flex; */
+/* .section-imagen {
+} */
+
+.capa-dark {
+    display: none;
 }
 
 .phone-1     {
     position: absolute;
-    /* top: 30%; */
-    left: 50%;
-    transform: translateX(-50%);
-    /* right: 0; */
+    top: 0;
+    right: 17%;
+    transform: translateX(-17%);
 }
 
 .phone-2 {
     position: absolute;
-    top: 50%;
+    top: 45%;
+    right: 32%;
     transform: translateY(-50%);
-    left: 10%;
 }
 
 .phone-3 {
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
-    right: 10%;
-    /* outline: 3px solid red; */
-    z-index: 1;
+    right: 3%;
+
 }
 
 .phone-4 {
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    /* transform: translate(-50%, -50%); */
-    /* outline: 3px solid red; */
-    z-index: 1;
+    bottom: -25%;
+    right: 25%;
 
 }
 
 .phone-5 {
     position: absolute;
-    bottom: -15%;
-    right: 11%;
-    /* outline: 3px solid red; */
-    z-index: 1;
-
+    bottom: -25%;
+    right: 10%;
 }
 
 
@@ -76,7 +62,6 @@
     justify-content: center;
     font-family: var(--fuente-principal);
     padding-left: 3rem;
-    /* outline: 3px solid red; */
 }
 
 .section-text {
@@ -86,7 +71,6 @@
     align-items: flex-start;
     padding: 2rem;
     width: 80%;
-    /* outline: 3px solid red; */
 }
 
 .title-home {
@@ -97,6 +81,7 @@
 .title-home p{
     display: inline;
     background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -109,7 +94,6 @@
 
 .btn-home {
     padding: .75rem 1.5rem;
-    /* background-color: var(--color-secundario); */
     background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
     color: #fff;
     border: 0;
@@ -120,32 +104,162 @@
 }
 
 .btn-home:hover {
-    /* background: var(--color-secundario); */
     background: linear-gradient(to top, #3F2C9B, #5A47F1);
+}
+
+@media (max-width: 1024px) {
+
+    .home-section {
+        /* height: 60vh; */
+        height: auto;
+    }
+
+    .img-section {
+        height: 100vh;
+    }
+
+    .phone-1     {
+        width: 100px;
+        right: 15%;
+        transform: translateX(-15%);
+    }
+
+    .phone-2 {
+        width: 100px;
+
+    }
+
+    .phone-3 {
+        width: 100px;
+
+    }
+
+    .phone-4 {
+        position: absolute;
+        bottom: -5%;
+        right: 25%;
+        width: 100px;
+    }
+    
+    .phone-5 {
+        position: absolute;
+        bottom: -14%;
+        right: 7%;
+        width: 100px;   
+    }
+
+    
 }
 
 @media (max-width: 768px) {
     .home-section {
-        height: auto;
+        height: 60vh;
         grid-template-columns: 1fr;
         padding: 4rem 0;
+        place-content: center;
     }
 
     .col-1 {
-        /* outline: 3px solid red; */
         padding-left: 0;
+        text-align: center;
+        z-index: 1;
     }
 
-    /* .img-section {
-        display: none;
+    .capa-dark {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .section-text {
+        align-items: center;
+    }
+
+    /* .title-home {
+
+    }
+
+    .title-description{
+
     } */
 
-    .section-imagen {
+    .img-section {
         display: none;
     }
+
+    /* .section-imagen {
+    } */
+
+    .br-home {
+        display: none;
+    }
+
+    .phone-1     {
+        position: absolute;
+        top: -5%;
+        left: 20%;
+    }
+    
+    .phone-2 {
+        position: absolute;
+        top: 78%;
+        left: 10%;
+    }
+    
+    .phone-3 {
+        position: absolute;
+        top: 4%;
+        right: 20%;
+
+    }
+    
+    .phone-4 {
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+    
+    .phone-5 {
+        position: absolute;
+        bottom: 8%;
+        right: 11%;    
+    }
+    
     
 }
 
 @media (max-width: 480px) {
-    
+    .home-section {
+        height: 80vh;
+    }
+
+    .phone-1 {
+        width: 80px;
+        top: 0;
+    }
+
+    .phone-2 {
+        width: 80px;
+        left: 3%;
+        top: 80%;
+    }
+
+    .phone-3 {
+        width: 80px;
+    }
+
+    .phone-4 {
+        width: 80px;
+    }
+
+    .phone-5 {
+        width: 80px;
+        right: 3%;
+    }
 }

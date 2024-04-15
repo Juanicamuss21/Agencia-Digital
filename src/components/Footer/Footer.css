@@ -6,11 +6,13 @@
   
   .footer-sections {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+
   }
   
   .footer-section {
     flex: 1;
+    text-align: center;
   }
   
   .footer-section h3 {
@@ -33,7 +35,7 @@
   }
   
   .footer-contact {
-    margin-top: 20px;
+    text-align: center;
   }
   
   .footer-contact h3 {
