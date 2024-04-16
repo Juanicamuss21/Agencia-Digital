@@ -2,14 +2,17 @@
 @import "node_modules/slick-carousel/slick/slick-theme.css";
 
 .proyectos-section {
-    padding: 4rem 1rem;
+    /* padding: 4rem 1rem; */
     background-color: #e9e9e9;
+    height: 100vh;
 }
 
 .proyectos-text {
     width: 80%;
     margin: auto;
     text-align: center;
+    /* outline: 3px solid red; */
+    padding: 4rem 1rem 2rem;
 }
 
 .proyectos-title {
@@ -132,6 +135,14 @@
   @media (max-width: 768px) {
 
     .proyectos-section {
+        height: auto;
+    }
+    
+    .proyectos-text {
+        padding: 1rem 0;
+    }
+
+    .proyectos-section {
         padding: 2rem 0;
     }
 
@@ -165,7 +176,7 @@
     }
 
     .proyectos-title h1 {
-        /* font-size: 2rem; */
+        font-size: 2.2rem;
     }
 
     .btns-proyectos button{

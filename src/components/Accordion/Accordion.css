@@ -83,27 +83,19 @@
 
 @media (max-width: 480px) {
 
-  /* .faq-section {
-    padding: 2rem .50rem;
-  } */
+  .accordion-body {
+    padding: 10px 0;
+  }
 
 
   .accordion-container {
     width: 90%;
-    /* outline: 3px solid red; */
   }
 
-  /* .faq-title {
-  } */
-
-  .accordion-header h3 {
-    font-size: 1rem;
+  .faq-title {
+    font-size: 2.2rem;
   }
-
-  .accordion-body {
-    font-size: 14px;
-  }
-
+  
   .plus-icon{
     font-size: 2rem;
   }

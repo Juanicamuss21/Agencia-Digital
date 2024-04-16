@@ -7,19 +7,19 @@ const servicesData = [
   {
     icon: <HiMiniPaintBrush className="icon" />,
     title: 'Diseño Web',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dignissimos, veritatis totam aperiam autem.',
+    description: 'Creamos diseños web atractivos y funcionales que reflejan la esencia de tu marca y cautivan a tu audiencia.',
     className: 'design'
   },
   {
     icon: <FaCode className="icon" />,
     title: 'Desarrollo Web',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dignissimos, veritatis totam aperiam autem.',
+    description: 'Nuestro equipo de desarrollo web utiliza las últimas tecnologías y prácticas recomendadas para crear sitios web rápidos, seguros y totalmente receptivos.',
     className: 'development'
   },
   {
     icon: <DiAptana className="icon" />,
     title: 'Mantenimiento',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima dignissimos, veritatis totam aperiam autem.',
+    description: 'Nos encargamos de mantener tu sitio actualizado y seguro para que puedas centrarte en hacer crecer tu negocio.',
     className: 'maintenance'
   }
 ]
@@ -29,7 +29,7 @@ const Services = () => {
     <section id="servicios" className="services-section">
       <div className='services-text'>
         <h1 className='services-title'>Servicios</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Descubre cómo nuestros servicios pueden ayudarte a alcanzar tus metas!</p>
       </div>
 
         <div className="services-cards">
@@ -40,7 +40,7 @@ const Services = () => {
               </div>
               <h2>{service.title}</h2>
               <p>{service.description}</p>
-              <button className={`btn-${service.className}`}>Ver más</button>
+              <a href="#contacto" className={`btn-${service.className}`}>Contactanos</a>
             </article>
           ))}
         </div>

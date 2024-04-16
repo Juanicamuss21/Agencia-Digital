@@ -68,12 +68,13 @@
     }
     
     .img-about {
-        width: 90%;
+        width: 80%;
     }
 
     .about-text {
     }
 
     .about-text h1{
+        font-size: 2.2rem;
     }
   }

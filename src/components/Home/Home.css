@@ -242,12 +242,12 @@
 
     .phone-1 {
         width: 80px;
-        top: 0;
+        top: 8%;
     }
 
     .phone-2 {
         width: 80px;
-        left: 3%;
+        left: 5%;
         top: 80%;
     }
 
@@ -261,6 +261,8 @@
 
     .phone-5 {
         width: 80px;
-        right: 3%;
+        bottom: 20%;
+        right: 5%;
+        /* outline: 3px solid red; */
     }
 }

@@ -38,7 +38,7 @@
 }
 
 .contact-form {
-    background: var(--color-primario);
+    /* background: var(--color-primario); */
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -52,11 +52,14 @@
     border: 0;
     outline: 0;
     border-radius: 6px;
-    background-color: #2F343A;
+    /* background-color: #2F343A; */
+    background: transparent;
     padding: 1rem;
     width: 70%;
-    color: #fff;
+    color: #000;
     font-size: 17px;
+    resize: none;
+    border: 2px solid var(--color-text);
 }
 
 .btn-form {
@@ -102,5 +105,9 @@
 
     .contact-form {
         width: 90%;
+    }
+
+    .contact-title {
+        font-size: 2.2rem;
     }
   }

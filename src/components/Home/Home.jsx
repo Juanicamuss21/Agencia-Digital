@@ -1,11 +1,11 @@
 import './Home.css'
 // import imgDesign from '../../assets/Frame (4).webp'
 import imgDesign from '../../assets/Frame (5).png'
-import Phone1 from '../../assets/Phone1.png'
-import Phone2 from '../../assets/Phone2.png'
-import Phone3 from '../../assets/Phone3.png'
-import Phone4 from '../../assets/Phone4.png'
-import Phone5 from '../../assets/Phone5.png'
+import Phone1 from '../../assets/Phone1.webp'
+import Phone2 from '../../assets/Phone2.webp'
+import Phone3 from '../../assets/Phone3.webp'
+import Phone4 from '../../assets/Phone4.webp'
+import Phone5 from '../../assets/Phone5.webp'
 
 // const Navegar
 
