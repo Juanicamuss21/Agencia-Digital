@@ -1,10 +1,12 @@
 .header-section {
-    position: fixed;
-    background-color: #000;
-    opacity: 0.8;
+    background-color: var(--color-primario);
+    /* opacity: .99; */
     width: 100%;
     height: 60px;
+    position: sticky;
+    top: 0;
     z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .menu-toggle {
@@ -20,13 +22,12 @@
 }
 
 .nav-section a {
-    font-size: 17px;
     text-decoration: none;
     color: #fff;
 }
 
 .nav-section a:hover {
-    color: #5a47f1;
+    color: var(--color-secundario);
 }
 /* 
 .nav-section a.active {

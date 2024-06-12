@@ -6,25 +6,41 @@ const Contact = () => {
   return (
     <section id="contacto" className="section-contact">
       <div className='contact-container'>
-        <div className='contact-text'>
-          <h1 className='contact-title'>Contacto</h1>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam inventore quisquam adipisci dicta veritatis.
-            </p>
-          <div className='icons'>
-            <img src={iconoWpp} alt="wpp" />
-            <img src={iconoMail} alt="mail" />
-          </div>
-        </div>
+        <h2 className='contact-title'>Contacto</h2>
+        <p>Ante cualquier duda, ¡no dudes en contactarnos!</p>
       </div>
 
-      <form className='contact-form' action="">
-        <input type="text" placeholder="Nombre" />
-        <input type="text" placeholder="Apellido" />
-        <input type="email" placeholder="Email" />
-        <textarea name="" id="" rows="10" placeholder='Mensaje...'></textarea>
-        <button type="submit" className='btn-form'>Enviar</button>
-      </form>
+      <div className='contact-form'>
+
+        <div className='col-form'>
+          <form className='form' action="">
+            <label htmlFor="">Nombre</label>
+            <input type="text" placeholder="Nombre" />
+            <label htmlFor="">Email</label>
+            <input type="email" placeholder="Email" />
+            <label htmlFor="">Mensaje</label>
+            <textarea name="" id="" rows="10" placeholder='Mensaje...'></textarea>
+            <button type="submit" className='btn-form'>Enviar</button>
+          </form>
+        </div>
+
+        <div className='contenedor-azul'></div>
+
+        <div className='contenedor-gris'>
+          <h2>Nuestras redes</h2>
+
+          <div className='redes'>
+            <img src={iconoWpp} alt="wpp" />
+            <p>+54 3854353077</p>
+          </div>
+
+          <div className='redes'>
+            <img src={iconoMail} alt="mail" />
+            <p>juanicamuss15@gmail.com</p>
+          </div>
+        </div>
+
+      </div>
     </section>
   )
 }

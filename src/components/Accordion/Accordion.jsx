@@ -7,16 +7,16 @@ const Accordion = () => {
 
   const preguntas = [
     {
-      pregunta: '¿Cuál es el objetivo de tu compañía?',
-      respuesta: 'Nuestro objetivo es brindar soluciones tecnológicas innovadoras y de alta calidad para satisfacer las necesidades de nuestros clientes.'
+      pregunta: '¿Incluye hosting y dominio?',
+      respuesta: 'Dependiendo del plan, ofrecemos opciones que incluyen hosting y dominio. Trabajamos con proveedores líderes en el mercado, que recomendamos a nuestros clientes.'
     },
     {
-      pregunta: '¿Qué servicios ofrecen?',
-      respuesta: 'Ofrecemos servicios de desarrollo web, diseño de interfaces de usuario, consultoría en tecnología y soporte técnico.'
+      pregunta: '¿Cuándo se realiza el pago?',
+      respuesta: 'Cobramos el 50% al inicio del servicio y el 50% restante al finalizar el desarrollo.'
     },
     {
-      pregunta: '¿Cómo se garantiza la calidad de sus productos?',
-      respuesta: 'Contamos con un equipo de expertos altamente capacitados y seguimos las mejores prácticas de la industria. Además, realizamos pruebas exhaustivas antes de entregar nuestros productos.'
+      pregunta: '¿Qué métodos de pago aceptamos?',
+      respuesta: 'Aceptamos transferencias bancarias y PayPal, y estamos evaluando otras opciones como Payoneer o Hotmart.'
     },
     {
       pregunta: '¿Cuáles son sus políticas de privacidad y seguridad?',
@@ -30,7 +30,7 @@ const Accordion = () => {
 
   return (
     <section id='preguntas-frecuentes' className="faq-section">
-      <h1 className='faq-title'>Preguntas Frecuentes</h1>
+      <h2 className='faq-title'>Preguntas Frecuentes</h2>
       <div className="accordion-container">
         {preguntas.map((item, index) => (
           <div key={index} className="accordion-item">

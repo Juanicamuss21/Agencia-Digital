@@ -1,40 +1,29 @@
 /* Acordeon.css */
 .faq-section {
-  background-color: var(--color-primario);
-  padding: 4rem 1rem;
-  /* height: 80vh; */
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  padding: 4rem 0;
 }
 
 .faq-title {
-  font-size: 2.5rem;
-  color: var(--color-secundario);
-  font-weight: 500;
+  color: var(--color-primario);
+  font-weight: 600;
   text-transform: uppercase;
-  /* background: linear-gradient(to bottom, #3F2C9B, #5A47F1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   text-align: center;
-  margin: 0;
 }
 
 .accordion-container {
   /* width: 600px; */
   width: 60%;
-  margin: 0 auto;
-  color: #fff;
+  margin: 4% auto;
+  color: #000;
 }
 
 .accordion-item {
-  border-bottom: 1px solid #ccc;
+  border: 1px solid #ccc;
   /* border-radius: 5px; */
   margin-bottom: 10;
   
-  /* padding: 10px; */
-  /* outline: 3px solid red; */
+  /* padding: 8px 15px; */
+  background-color: #fff;
 
 }
 
@@ -45,38 +34,38 @@
   /* background-color: #f2f2f2; */
   background-color: transparent;
   cursor: pointer;
-  padding: .40rem 0;
-  /* outline: 3px solid red; */
+  padding: 12px 20px;
 }
 
 .accordion-header h3{
-  font-weight: 500;
+  color: var(--color-primario);
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .accordion-body {
-  padding: 10px;
+  padding: 12px 20px;
   background-color: #fff;
   background-color: transparent;
 }
 
 .plus-icon{
-  color: #3F2C9B;
+  /* color: #3F2C9B; */
+  color: var(--color-primario);
   font-size: 2.2rem;
 }
 
 .minus-icon {
-  color: #3F2C9B;
+  /* color: #3F2C9B; */
+  color: var(--color-secundario);
   font-size: 2.2rem;
-  /* background: linear-gradient(to bottom, #3F2C9B, #5A47F1); */
-  /* background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
 
 @media (max-width: 768px) {
   .accordion-container {
     width: 80%;
+    /* outline: 3px solid red; */
   }
   
 }
@@ -84,7 +73,6 @@
 @media (max-width: 480px) {
 
   .accordion-body {
-    padding: 10px 0;
   }
 
 
@@ -92,8 +80,12 @@
     width: 90%;
   }
 
+  .accordion-header h3 {
+    font-size: 18px;
+  }
+
   .faq-title {
-    font-size: 2.2rem;
+    font-size: 30px;
   }
   
   .plus-icon{
