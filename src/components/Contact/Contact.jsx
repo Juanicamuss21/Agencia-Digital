@@ -1,8 +1,26 @@
 import './Contact.css'
 import iconoWpp from '../../assets/Icono-wpp.webp'
 import iconoMail from '../../assets/Icono-gmail.webp'
+import emailjs from 'emailjs-com'
+import { toast, Toaster } from 'react-hot-toast'
+import { useRef } from 'react'
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs.sendForm('service_vumsxww', 'template_o6zq5pf', form.current, '4U9cfwaK154485vNs')
+      .then((result) => {
+        toast.success('Mensaje enviado')
+      }, (error) => {
+        toast.error(error.text)
+      })
+
+    e.target.reset()
+  }
+
   return (
     <section id="contacto" className="section-contact">
       <div className='contact-container'>
@@ -13,7 +31,7 @@ const Contact = () => {
       <div className='contact-form'>
 
         <div className='col-form'>
-          <form className='form' action="">
+          <form className='form' ref={form} onSubmit={sendEmail}>
             <label htmlFor="">Nombre</label>
             <input type="text" placeholder="Nombre" />
             <label htmlFor="">Email</label>
@@ -27,20 +45,34 @@ const Contact = () => {
         <div className='contenedor-azul'></div>
 
         <div className='contenedor-gris'>
-          <h2>Nuestras redes</h2>
+          <h2>Otros medios</h2>
 
           <div className='redes'>
             <img src={iconoWpp} alt="wpp" />
-            <p>+54 3854353077</p>
+            <a href="https://api.whatsapp.com/send?phone=+5493854353077&text=Hola, me gustaría hacer una consulta!" target="_blank" rel='noreferrer'>Enviar Mensaje</a>
           </div>
 
           <div className='redes'>
             <img src={iconoMail} alt="mail" />
-            <p>juanicamuss15@gmail.com</p>
+            <a href="mailto:juanicamuss15@gmail.com" target="_blank" rel='noreferrer'>Enviar Mensaje</a>
           </div>
         </div>
 
       </div>
+
+      <Toaster
+                position='bottom-right'
+                reverseOrder={true}
+                toastOptions={{
+                  className: '',
+                  duration: 3000,
+                  style: {
+                    background: '#363636',
+                    color: 'white',
+                    fontSize: '15px'
+                  }
+                }}
+              />
     </section>
   )
 }
