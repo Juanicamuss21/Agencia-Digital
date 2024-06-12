@@ -215,7 +215,24 @@
     transform: scale(1.1);
 }
 
+/*.check-design {
+    color: #cb56a6;
+    outline: 3px solid red;
+}
+
+.check-development {
+    color: #3F2C9B;
+}
+ 
+.check-maintenance {
+    color: #0197d9;
+} */
+
 @media (max-width: 768px) {
+
+    .services-section {
+        padding: 2rem 0;
+    }
 
     .services-cards {
         width: 100%;
@@ -225,19 +242,23 @@
         gap: 2rem;
         flex-wrap: wrap; */
     }
+    
+    .services-title{
+        font-size: 30px;
+    }
 
 }
 
 @media (max-width: 480px) {
 
-    .services-title{
-        font-size: 30px;
-    }
-
     .card-text {
         width: 100%;
         gap: 1rem;
-        /* align-items: center; */
+        padding: 20px 0;
+    }
+
+    .services-text p {
+        padding: 5px;
     }
 
 }

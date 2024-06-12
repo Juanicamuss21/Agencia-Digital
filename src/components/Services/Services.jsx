@@ -1,11 +1,7 @@
 import './Services.css'
 import { HiMiniPaintBrush } from 'react-icons/hi2'
 import { DiAptana } from 'react-icons/di'
-import { FaCode } from 'react-icons/fa6'
-// import imgdiseño from '../../assets/Imagen-diseño.jpg'
-// import imgdesarrollo from '../../assets/Imagen-desarrollo.jpg'
-// import imgmantenimiento from '../../assets/Imagen-mantenimiento.jpg'
-import { FaCheckCircle } from 'react-icons/fa'
+import { FaCode, FaCheck } from 'react-icons/fa6'
 
 const servicesData = [
   {
@@ -54,7 +50,7 @@ const Services = () => {
                 <ul className='ul-services'>
                   {service.services.map((service, index) => (
                     <li className='li-services' key={index}>
-                      <FaCheckCircle className='icon-check' />
+                      <FaCheck className='icon-check' />
                       {service}
                     </li>
                   ))}

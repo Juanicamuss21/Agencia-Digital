@@ -6,12 +6,12 @@ import './Home.css'
 // import Phone4 from '../../assets/Phone4.webp'
 // import Phone5 from '../../assets/Phone5.webp'
 // import imgDesign from '../../assets/Diseño-portada.webp'
-// import Hero from '../../assets/Hero-image.webp'
+import Hero from '../../assets/Hero-image.webp'
 
 const Home = () => {
   return (
       <section id='inicio' className='home-section'>
-            {/* <img className='img-section' src={Hero} alt="img" /> */}
+            <img className='img-section' src={Hero} alt="img" />
 
             <div className='capa-dark'></div>
             <div className='capa-blue'></div>
