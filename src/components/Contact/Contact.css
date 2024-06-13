@@ -55,6 +55,11 @@
     text-decoration: none;
 }
 
+
+.redes a:hover {
+    color: var(--color-secundario);
+}
+
 .redes img {
     cursor: pointer;
     width: 28px;

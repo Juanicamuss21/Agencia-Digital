@@ -25,7 +25,7 @@ const Navigation = () => {
         <a href="#sobre-nosotros" onClick={toggleMenu}>Sobre Nosotros</a>
         <a href="#servicios" onClick={toggleMenu}>Servicios</a>
         {/* <a href="#proyectos" onClick={toggleMenu}>Proyectos</a> */}
-        {/* <a href="#preguntas-frecuentes" onClick={toggleMenu}>F&Q</a> */}
+        {/* <a href="#preguntas-frecuentes" onClick={toggleMenu}>Preguntas Frecuentes</a> */}
         <a href="#contacto" onClick={toggleMenu}>Contacto</a>
       </nav>
     </header>

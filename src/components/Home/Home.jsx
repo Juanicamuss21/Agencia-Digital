@@ -1,11 +1,4 @@
 import './Home.css'
-// import imgDesign from '../../assets/Frame (5).png'
-// import Phone1 from '../../assets/Phone1.webp'
-// import Phone2 from '../../assets/Phone2.webp'
-// import Phone3 from '../../assets/Phone3.webp'
-// import Phone4 from '../../assets/Phone4.webp'
-// import Phone5 from '../../assets/Phone5.webp'
-// import imgDesign from '../../assets/Diseño-portada.webp'
 import Hero from '../../assets/Hero-image.webp'
 
 const Home = () => {

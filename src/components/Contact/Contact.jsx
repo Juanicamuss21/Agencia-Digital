@@ -49,12 +49,12 @@ const Contact = () => {
 
           <div className='redes'>
             <img src={iconoWpp} alt="wpp" />
-            <a href="https://api.whatsapp.com/send?phone=+5493854353077&text=Hola, me gustaría hacer una consulta!" target="_blank" rel='noreferrer'>Enviar Mensaje</a>
+            <a href="https://api.whatsapp.com/send?phone=+5493854353077&text=Hola, me gustaría hacer una consulta!" target="_blank" rel='noreferrer'>Enviar Whatsapp</a>
           </div>
 
           <div className='redes'>
             <img src={iconoMail} alt="mail" />
-            <a href="mailto:juanicamuss15@gmail.com" target="_blank" rel='noreferrer'>Enviar Mensaje</a>
+            <a href="mailto:juanicamuss15@gmail.com" target="_blank" rel='noreferrer'>Enviar Gmail</a>
           </div>
         </div>
 
