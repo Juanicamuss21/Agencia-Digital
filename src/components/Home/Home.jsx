@@ -1,12 +1,13 @@
 import './Home.css'
-import Hero from '../../assets/Hero-image.webp'
+// import Hero from '../../assets/Hero-image.webp'
+import Hero from '../../assets/Hero-portada-prueba.webp'
+// import Hero2 from '../../assets/Hero-portada-prueba2.webp'
 
 const Home = () => {
   return (
       <section id='inicio' className='home-section'>
             <img className='img-section' src={Hero} alt="img" />
 
-            <div className='capa-dark'></div>
             <div className='capa-blue'></div>
             <div className='col-1'>
 
