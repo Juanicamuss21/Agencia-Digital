@@ -36,7 +36,16 @@
 
   @media (max-width: 480px) {
     .footer-sections {
-      gap: 10px;
+      gap: 1rem;
+      padding: 10px;
+    }
+
+    .footer-sections a{
+      font-size: 14px;
+    }
+
+    .footer-contact p {
+      font-size: 14px;
     }
   }
   

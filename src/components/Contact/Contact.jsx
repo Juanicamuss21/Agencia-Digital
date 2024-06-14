@@ -32,13 +32,13 @@ const Contact = () => {
 
         <div className='col-form'>
           <form className='form' ref={form} onSubmit={sendEmail}>
-            <label htmlFor="">Nombre</label>
-            <input type="text" placeholder="Nombre" />
-            <label htmlFor="">Email</label>
-            <input type="email" placeholder="Email" />
-            <label htmlFor="">Mensaje</label>
-            <textarea name="" id="" rows="10" placeholder='Mensaje...'></textarea>
-            <button type="submit" className='btn-form'>Enviar</button>
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre" name="from_name"/>
+            <label>Email</label>
+            <input type="email" placeholder="Email" name="email"/>
+            <label>Mensaje</label>
+            <textarea name="message" id="message" rows="10" placeholder='Mensaje...'></textarea>
+            <button type="submit" className='btn-form' value='Send'>Enviar</button>
           </form>
         </div>
 
