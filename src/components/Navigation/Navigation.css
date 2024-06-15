@@ -95,7 +95,6 @@
 @media (max-width: 480px) {
     .logo-section {
         width: 35%;
-        outline: 3px solid red;
     }
 
     .logo {
