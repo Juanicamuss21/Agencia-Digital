@@ -95,10 +95,11 @@
 @media (max-width: 480px) {
     .logo-section {
         width: 35%;
+        margin-left: 10px;
     }
 
     .logo {
         height: auto;
-        width: 120px;
+        width: 100%;
     }
 }
