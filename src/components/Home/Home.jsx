@@ -1,7 +1,6 @@
 import './Home.css'
 // import Hero from '../../assets/Hero-image.webp'
-import Hero from '../../assets/Hero-portada-prueba.webp'
-// import Hero2 from '../../assets/Hero-portada-prueba2.webp'
+import Hero from '../../assets/Hero-portada.webp'
 
 const Home = () => {
   return (
