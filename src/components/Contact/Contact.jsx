@@ -62,8 +62,8 @@ const Contact = () => {
              <img src={iconoMail} alt="mail" />
             </a>
 
-            <a href="https://api.whatsapp.com/send?phone=+5493854353077&text=Hola, me gustaría hacer una consulta!" target="_blank" rel='noreferrer'>
-             Enviar Gmail
+            <a href="mailto:juanicamuss15@gmail.com" target="_blank" rel='noreferrer'>
+              Enviar Gmail
             </a>
           </div>
         </div>
