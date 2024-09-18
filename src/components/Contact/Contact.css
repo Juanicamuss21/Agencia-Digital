@@ -14,7 +14,7 @@
     margin: auto;
     text-align: center;
     color: var(--color-text);
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 .contact-container p{
