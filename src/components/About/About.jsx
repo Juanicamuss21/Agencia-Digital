@@ -8,7 +8,7 @@ import icon3 from '../../assets/number-3-1.svg'
 
 const About = () => {
   return (
-    <section id='sobre-nosotros' className='about-section'>
+    <section id='beneficios' className='about-section'>
 
       <div className='about-section-title'>
         <h2>No impidas que tu negocio cuente con los beneficios de un sitio web</h2>

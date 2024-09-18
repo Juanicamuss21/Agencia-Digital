@@ -7,7 +7,7 @@ const Footer = () => {
 
       <div className="footer-sections">
        <a href="#inicio">Inicio</a>
-        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#beneficios">Beneficios</a>
         <a href="#servicios">Servicios</a>
         <a href="#contacto">Contacto</a>
       </div>
