@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-size: 28px;
   text-transform: uppercase;
-  color: var(--color-text);
+  /* color: var(--color-text); */
 }
 
 h3 {
