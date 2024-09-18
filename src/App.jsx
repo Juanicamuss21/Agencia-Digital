@@ -1,7 +1,7 @@
 import './App.css'
 import Home from './components/Home/Home'
 import About from './components/About/About'
-import Navigation from './components/Navigation/Navigation'
+// import Navigation from './components/Navigation/Navigation'
 // import WhyUs from './components/Why Us/WhyUs'
 import Services from './components/Services/Services'
 // import Proyectos from './components/Proyectos/Proyectos'
@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer'
 function App () {
   return (
     <>
-      <Navigation />
+      {/* <Navigation /> */}
       <Home />
       <About />
       {/* <WhyUs /> */}

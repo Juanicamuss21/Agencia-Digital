@@ -33,9 +33,9 @@ const servicesData = [
 const Services = () => {
   return (
     <section id="servicios" className="services-section">
-      <div className='services-text'>
-        <h2 className='services-title'>Nuestros Servicios</h2>
-        <p>Descubre cómo nuestros servicios pueden ayudarte a alcanzar tus metas!</p>
+      <div className='services-section-title'>
+        <h2>Servicios que ofrecemos</h2>
+        <p>Descubre cómo nuestros servicios pueden ayudarte</p>
       </div>
 
         <div className="services-cards">

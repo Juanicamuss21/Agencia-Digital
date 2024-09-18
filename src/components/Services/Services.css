@@ -4,23 +4,23 @@
     /* background-color: var(--color-primario); */
 }
 
-.services-text {
-    /* width: 80%; */
-    padding-bottom: 2rem;
-    text-align: center;
+.services-section-title {
+    /* padding-bottom: 2rem; */
+    width: 60%;
     margin: auto;
+    text-align: center;
+    color: var(--color-text);
+    /* outline: 3px solid red; */
 }
 
-.services-title {
+/* .services-title {
     color: var(--color-primario);
     font-weight: 600;
     text-transform: uppercase;
-}
+} */
 
-.services-text p{
-    /* font-size: 17px;
-    font-weight: 300; */
-    color: #000;
+.services-section-title p{
+    padding: 10px;
 }
 
 .services-cards {

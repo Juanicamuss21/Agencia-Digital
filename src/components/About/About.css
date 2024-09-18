@@ -3,11 +3,24 @@
     padding: 4rem 0;
 }
 
-.about-section h2{
+.about-section-title {
+    /* outline: 3px solid red; */
+    width: 60%;
+    margin: auto;
     text-align: center;
-    color: var(--color-primario);
-    font-weight: 600;
+    gap: 20px;
+    color: var(--color-text);
+    /* gap: 1rem; */
+}
+
+/* .about-section h2{
+    font-size: 28px;
+    margin: auto;
     text-transform: uppercase;
+} */
+
+.about-section-title p{
+    padding: 10px;
 }
 
 .about-col {
@@ -19,101 +32,45 @@
     gap: 30px;
     padding: 2rem;
     border-radius: 12px;
-    background: #fff;
+    background: #fafafa;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    /* outline: 3px solid red; */
 }
 
 .img-about {
-    width: 40%;
+    width: 45%;
     border-radius: 7px;
-    z-index: 1;
 }
 
 .description {
-    width: 60%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 1rem;
+    color: var(--color-text);
 }
 
-.p-about {
-    font-weight: 600;
-    color: var(--color-primario);
-}
-
-.ul-about {
+.description div {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-top: 12px;
-    list-style: none;
+    gap: 10px;
 }
 
-.li-about {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    font-weight: 600;
+.icon-about {
+    display: inline;
+    width: 28px;
+    height: 28px;
 }
 
-.icon-check {
-    color: #4caf50;
-}
-
-.btn-about {
-    padding: .75rem 1.5rem;
-    background: var(--color-secundario);
-    border: 0;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 1rem;
-    text-decoration: none;
-    transition: transform 0.3s ease;
-    font-weight: 600;
-    color: #fff;
-}
-
-.btn-about:hover {
-    transform: scale(1.1);
-}
 
 @media (max-width: 768px) {
-    .about-section {
-        padding: 2rem 0;
-    }
-
-    .about-section h2 {
-        font-size: 30px;
-    }
-
     .about-col {
-        /* width: 80%; */
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 10%;
+        width: 80%;
+        outline: 3px solid red;
     }
-
-    .img-about {
-        width: 60%;
-    }
-
-    .description {
-        width: 90%;
-    }
-
-    .ul-about {
-        justify-content: center;
-    }
-
   }
 
   @media (max-width: 488px) {
-    .about-col {
-        width: 90%;
-        padding: 1.5rem;
-    }
-    
-    .img-about {
-        width: 80%;
-    }
+   
   }

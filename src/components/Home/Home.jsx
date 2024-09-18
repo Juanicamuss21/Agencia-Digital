@@ -1,6 +1,7 @@
 import './Home.css'
 // import Hero from '../../assets/Hero-image.webp'
-import Hero from '../../assets/Hero-portada.webp'
+import Hero from '../../assets/ImagenHero.jpeg'
+import { ArrowIconRight } from '../../Icons'
 
 const Home = () => {
   return (
@@ -12,15 +13,16 @@ const Home = () => {
 
                 <div className='section-text'>
                     <div className='title-home'>
-                        <h1>Desarrollamos tu sitio web</h1>
-                        <h1>¡ahora mismo!</h1>
+                        <h1>Impulsa tu negocio con un sitio web profesional con los mejores precios.
+                        </h1>
                     </div>
                     <p className='title-description'>
-                        ¡Impulsá tu presencia en línea con nuestra agencia de desarrollo web!
+                    Sitios web personalizados, optimizados y accesibles. Potencia tu presencia online con precios que se ajustan a tu bolsillo.
                     </p>
 
                     <a href="#contacto" className='btn-home'>
-                        CONTÁCTANOS
+                        QUIERO HACER UNA CONSULTA
+                        <ArrowIconRight />
                     </a>
                 </div>
             </div>
