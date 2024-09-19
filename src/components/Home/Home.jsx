@@ -12,10 +12,9 @@ const Home = () => {
             <div className='col-1'>
 
                 <div className='section-text'>
-                    <div className='title-home'>
-                        <h1>Impulsa tu negocio con un sitio web profesional con los mejores precios.
-                        </h1>
-                    </div>
+                    <h1>
+                        Impulsa tu negocio con un sitio web profesional y a los mejores precios.
+                    </h1>
                     <p className='title-description'>
                     Sitios web personalizados, optimizados y accesibles. Potencia tu presencia online con precios que se ajustan a tu bolsillo.
                     </p>

@@ -1,15 +1,12 @@
 .home-section {
-    height: 70vh;
+    /* height: 70vh; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url(../../assets/Hero-image.webp);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     overflow: hidden;
     position: relative;
     color: #fff;
+    padding: 4rem 0;
 }
 
 .capa-blue {
@@ -48,7 +45,7 @@
     align-items: center;
     padding: 2rem;
     width: 60%;
-    /* text-align: center; */
+    text-align: center;
     gap: 30px;
     z-index: 1;
 }
@@ -81,28 +78,37 @@
 }
 
 @media (max-width: 1024px) {
-
+    .section-text {
+        width: 80%;
+    }
     
 }
 
 @media (max-width: 768px) {
-    .home-section {
-        height: 60vh;
+    .section-text h1{
+        font-size: 34px;
     }
 
-    .br-home {
-        display: none;
-    }
-    
 }
 
 @media (max-width: 480px) {
-    .home-section {
-        height: 70vh;
+    .section-text h1{
+        font-size: 30px;
     }
 
-    .title-home h1{
-       font-size: 40px;
+    .section-text {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .btn-home {
+        font-size: 12px;
+        padding: .5rem 1rem;
+        margin-top: 1rem;
+    }
+
+    .title-description {
+        font-size: 14px;
     }
 
 }
