@@ -68,6 +68,13 @@ const settings = {
         slidesToShow: 3,
         slidesToScroll: 1
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
     }
 
   ]
@@ -78,19 +85,6 @@ Modal.setAppElement('#root')
 const Proyectos = () => {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedImage, setSelectedImage] = useState('')
-  // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setWindowWidth(window.innerWidth)
-  //   }
-
-  //   window.addEventListener('resize', handleResize)
-
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize)
-  //   }
-  // }, [])
 
   const openModal = (image) => {
     setSelectedImage(image)
