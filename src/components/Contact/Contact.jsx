@@ -8,8 +8,19 @@ import { useRef } from 'react'
 const Contact = () => {
   const form = useRef()
 
+  console.log(`FORMULARIO ${form.current}`)
+
   const sendEmail = (e) => {
     e.preventDefault()
+
+    const name = form.current?.from_name.value
+    const email = form.current?.email.value
+    const message = form.current?.message.value
+
+    // Validación de campos
+    if (!name || !email || !message) {
+      return toast.error('Por favor, completa todos los campos')
+    }
 
     emailjs.sendForm('service_vumsxww', 'template_o6zq5pf', form.current, '4U9cfwaK154485vNs')
       .then((result) => {

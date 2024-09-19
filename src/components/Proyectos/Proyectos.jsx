@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Modal from 'react-modal'
 import './Proyectos.css'
 import MockupClinica from '../../assets/Mockup-Clinica.webp'
@@ -80,17 +80,17 @@ const Proyectos = () => {
   const [selectedImage, setSelectedImage] = useState('')
   // const [windowWidth, setWindowWidth] = useState(window.innerWidth)
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setWindowWidth(window.innerWidth)
+  //   }
 
-    window.addEventListener('resize', handleResize)
+  //   window.addEventListener('resize', handleResize)
 
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
+  //   return () => {
+  //     window.removeEventListener('resize', handleResize)
+  //   }
+  // }, [])
 
   const openModal = (image) => {
     setSelectedImage(image)
