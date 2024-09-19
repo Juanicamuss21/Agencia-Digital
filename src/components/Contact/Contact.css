@@ -2,14 +2,7 @@
     padding: 4rem 0;
 }
 
-/* .contact-text {
-    width: 70%;
-    margin: auto;
-    margin-top: 2rem;
-    outline: 3px solid red;
-} */
-
-.contact-container {
+.contact-section-title {
     width: 60%;
     margin: auto;
     text-align: center;
@@ -17,7 +10,7 @@
     /* text-transform: uppercase; */
 }
 
-.contact-container p{
+.contact-section-title p{
     padding: 10px;
 }
 
@@ -140,8 +133,13 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
-    .contact-title {
-        font-size: 30px;
+    
+    .section-contact {
+        padding: 2rem 1rem;
+    }
+
+    .contact-section-title {
+        width: 80%;
     }
 
     .contact-text {
@@ -184,13 +182,13 @@ textarea:focus {
   }
   
   @media (max-width: 480px) {
-    .section-contact {
-        padding: 2rem 0;
+
+    .contact-section-title {
+        width: 100%;
     }
 
     .contact-form {
-        width: 90%;
-        margin: 10% auto;
+        width: 100%;
     }
 
     .form {
@@ -199,7 +197,6 @@ textarea:focus {
 
     .contenedor-azul {
         width: 20%;
-        /* background: var(--color-primario); */
     }
 
     .contenedor-gris {
